@@ -58,10 +58,22 @@ as etaps serão concluídas, os critérios a serem avaliados nesse projeto serã
   ````Gerenciar portfólio de projetos de tecnologia da informação, priorizando critérios alinhados ao planejamento estratégico da organização````<br>
 
 ## Etapas do projeto
-<h4>
-<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Concluído. <br>
-<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Em andamento.
-</h4>
+####
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Em andamento. <br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Concluído.
+
+### Projeto geral
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar story board.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar personas e estória de usuário.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar protótipo.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Demais assuntos que ainda não foram abordados.<br>
+
+### Front end
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar projeto angular.
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar arquitetura de pastas.
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Instalar e configurar as dependências do projeto.
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Demais etapas ainda não definidas.
+
 
 ## Como executar o projeto
 

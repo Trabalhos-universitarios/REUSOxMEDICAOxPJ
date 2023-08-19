@@ -19,10 +19,10 @@
 ## Resumo do projeto
 
 Este é um projeto universitário que tem como objetivo, colocar em prática os temas abordado ao longo da discimplina. São 2 disciplinas que esse projeto vai cobrir,
-Desenvolvimento Orientado a Reuso de Software e Medição e Análise de Processos e Produtos de Software. Esse projeto será executado em etapas, conforme ao disciplina avança
+````Desenvolvimento Orientado a Reuso de Software e Medição```` e ````Análise de Processos e Produtos de Software````. Esse projeto será executado em etapas, conforme ao disciplina avança
 as etaps serão concluídas, os critérios a serem avaliados nesse projeto serão os seguintes:
 
-### Desenvolvimento Orientado a Reuso de Software
+### Desenvolvimento orientado a reuso de software
 - RA1 (Resultado de aprendizagem 1):<br>
 ````Conceber planejamento no contexto das abordagens de desenvolvimento para reuso e com reuso de software de acordo com o domínio especificado.````<br>
   - EC (Elemento de Competência): <br>
@@ -35,7 +35,7 @@ as etaps serão concluídas, os critérios a serem avaliados nesse projeto serã
 ````Desenvolver Linhas de Produto e Processo de Software de acordo com o planejamento do domínio.````<br>
   - EC (Elemento de competência):<br>
   ````Codificar produtos de software utilizando boas práticas de programação, conforme os requisitos e as especificações, de forma sistematizada e colaborativa````
-### Medição e Análise de Processos e Produtos de Software
+### Medição e análise de processos e produtos de software
 - RA1 (Resultado de aprendizagem 1):<br>
 ````Elaborar medições de processos de software de acordo com o contexto especificado.````<br>
   - EC (Elemento de Competência): <br>
@@ -57,6 +57,11 @@ as etaps serão concluídas, os critérios a serem avaliados nesse projeto serã
   - EC (Elemento de Competência):<br>
   ````Gerenciar portfólio de projetos de tecnologia da informação, priorizando critérios alinhados ao planejamento estratégico da organização````<br>
 
+## Etapas do projeto
+<h4>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Concluído. <br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Em andamento.
+</h4>
 
 ## Como executar o projeto
 

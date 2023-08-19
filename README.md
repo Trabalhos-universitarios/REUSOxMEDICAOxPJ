@@ -20,20 +20,45 @@
 
 Este é um projeto universitário que tem como objetivo, colocar em prática os temas abordado ao longo da discimplina. São 2 disciplinas que esse projeto vai cobrir,
 Desenvolvimento Orientado a Reuso de Software e Medição e Análise de Processos e Produtos de Software. Esse projeto será executado em etapas, conforme ao disciplina avança
-as etaps serão concluídas, as etaps serão as seguintes:
+as etaps serão concluídas, os critérios a serem avaliados nesse projeto serão os seguintes:
 
-## Desenvolvimento Orientado a Reuso de Software
+### Desenvolvimento Orientado a Reuso de Software
 - RA1 (Resultado de aprendizagem 1):<br>
-```Conceber planejamento no contexto das abordagens de desenvolvimento para reuso e com reuso de software de acordo com o domínio especificado.``````
-  - EC1 (Elemento de Competência (Internaliza, Mobiliza, Certifica) e Competência): 
-  ````Planejar arquiteturas inovadoras e seguras de software baseadas em padrões e normas, selecionando configuração adequada de hardware e software````
+````Conceber planejamento no contexto das abordagens de desenvolvimento para reuso e com reuso de software de acordo com o domínio especificado.````<br>
+  - EC (Elemento de Competência): <br>
+  ````Planejar arquiteturas inovadoras e seguras de software baseadas em padrões e normas, selecionando configuração adequada de hardware e software````<br>
+- RA2 (Resultado de aprendizagem):<br>
+````Gerenciar com testes o processo para gestão da reutilização de produtos de software de acordo com o domínio especificado.````<br>
+  - EC (Elemento de Competência):<br>
+  ````Testar produtos de software em relação aos requisitos e às especificações de forma sistematizada, integrada e autorregulada````<br>
+- RA3 (Resultado de aprendizagem):<br>
+````Desenvolver Linhas de Produto e Processo de Software de acordo com o planejamento do domínio.````<br>
+  - EC (Elemento de competência):<br>
+  ````Codificar produtos de software utilizando boas práticas de programação, conforme os requisitos e as especificações, de forma sistematizada e colaborativa````
+### Medição e Análise de Processos e Produtos de Software
+- RA1 (Resultado de aprendizagem 1):<br>
+````Elaborar medições de processos de software de acordo com o contexto especificado.````<br>
+  - EC (Elemento de Competência): <br>
+  ````Representar com precisão processos na linguagem mais apropriada ao contexto, a partir da análise dos diferentes cenários de negócios.````<br>
+- RA2 (Resultado de aprendizagem):<br>
+````Desenvolver medições de produtos de software de acordo com o contexto especificado.````<br>
+  - EC (Elemento de Competência):<br>
+  ````Criar modelos de soluções computacionais inovadores, utilizando a linguagem mais apropriada ao contexto para dados estruturados e não estruturados.````<br>
+- RA3 (Resultado de aprendizagem):<br>
+````Estimar métricas de processos de software durante o desenvolvido da funcionalidade.````<br>
+  - EC (Elemento de competência):<br>
+  ````Analisar fenômenos e comportamentos de projetos por meio de processos adequados na medição, conforme preceitos éticos e legais.````
+- RA4 (Resultado de aprendizagem 1):<br>
+````Planejar métricas de processo de software de acordo com a funcionalidade proposta.````<br>
+  - EC (Elemento de Competência): <br>
+  ````Analisar fenômenos e comportamentos de processos por meio de métodos quantitativos, de forma crítica e ética.````<br>
+- RA5 (Resultado de aprendizagem):<br>
+````Conduzir com precisão estimativas e planejamento de projetos de software.````<br>
+  - EC (Elemento de Competência):<br>
+  ````Gerenciar portfólio de projetos de tecnologia da informação, priorizando critérios alinhados ao planejamento estratégico da organização````<br>
 
 
-
-<!-- ## Como instalar e iniciar o projeto
-````
-Para que o código funcione corretamente deve-se ser instalados as seguintes ferramentas:
-````
+## Como executar o projeto
 
 ### Front End
 - Node em <a>https://nodejs.org/en/download/</a>
@@ -59,7 +84,7 @@ package.json
 ```
 Caso note que falta algun, deverá instalar manualmente através do terminal usando o comando ```npm install <nome do pacote>```.
 
-### Back End
+<!-- ### Back End
 ````
 Para que o código funcione corretamente deve-se ser instalados as seguintes ferramentas:
 ````
@@ -77,6 +102,4 @@ Para que o código funcione corretamente deve-se ser instalados as seguintes fer
 
 Após essas configurações, deve-se inicializar o servidos apache e o mysql diretamente no painel de controle do xampp, feito isso basta recarregar a página http://localhost:4200/ ou a porta que vocie selecionou para rodar o Angular através do ```ng serve```.
 
-Para ver os dados sendo inseridos na tabela, basta navegar até http://localhost/phpmyadmin/ ou abrir o painel de controle do xampp (XAMPP Control Painel) e clicar no botão Admin do MySQL em em seguida abris a tabela que deseja consultar dentro do database salaosimp.
-
- -->
+Para ver os dados sendo inseridos na tabela, basta navegar até http://localhost/phpmyadmin/ ou abrir o painel de controle do xampp (XAMPP Control Painel) e clicar no botão Admin do MySQL em em seguida abris a tabela que deseja consultar dentro do database salaosimp. -->

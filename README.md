@@ -84,6 +84,7 @@ Após a instalação e configuração do Node, deve-se instalar as seguintes fer
 
 - Type Script ```npm i -g typescript```
 - Angular CLI ```npm i @angular/cli```
+- Angular Material ```ng add @angular/material```
 
 Após a instalação das ferramentas acima, deve-se executar a instalação dos pacotes através do seguinte comando:
 
@@ -99,24 +100,39 @@ existentes em :
 ```javascript 
 package.json
 ```
-Caso note que falta algun, deverá instalar manualmente através do terminal usando o comando ```npm install <nome do pacote>```.
+Caso note que falta algun, deverá instalar manualmente através do terminal usando o comando ```npm install <nome do pacote + versão do pacote>```.
 
-<!-- ### Back End
+### Back End
 ````
 Para que o código funcione corretamente deve-se ser instalados as seguintes ferramentas:
 ````
+- ````npm init````
+- Node em ````<a>https://nodejs.org/en/download/</a>```` (caso não tenha instalado ainda)
+- Express em ````npm install express –save````
+- Pacotes para trabalhar com node.ts ````npm install typescript ts-node @types/node --save-dev````
+  - Isso instala três pacotes como dependências de desenvolvimento em seu projeto: 
+    - typescript: a cadeia de ferramentas do TypeScript.
+    - ts-node: um pacote para executar aplicativos do TypeScript sem compilação prévia para JavaScript.
+    - @types/node: as definições de tipo do TypeScript para o Node.js.
+  A última coisa a ser feita é adicionar um arquivo tsconfig.json para garantir que o TypeScript esteja configurado corretamente para o aplicativo que você irá compilar.
+- npm install @prisma/cli --save-dev
+Como prática recomendada, aconselha-se instalar o Prisma CLI localmente em seu projeto (ao invés de uma instalação global). Isso ajuda a evitar conflitos de versão caso você tenha mais de um projeto Prisma em sua máquina.
+- Docker em ````<a>https://docs.docker.com/desktop/install/windows-install/</a>````
 
-- Xampp em <a>https://www.apachefriends.org/download.html</a>
- 
- Após a instalação e configuração do xampp deve-se seguir os seguintes passos:
 
- #### Passo 1
- - Navegar até a pasta back-end neste repositório, copiar a pasta salao.
+
+ Após a instalação e configuração das dependências deve-se seguir os seguintes passos:
+
+ #### Passos para subir o front end
+ - Abrir o navegador 
  - Navegar em sua máquina até a pasta xampp/htdocs e colar a pasta copiada (salao).
- #### Passo 2
- - Navegar até a pasta back-end/sql neste repositório e copiar a pasta data.
- - Navegar em sua máquina até a pasta xampp/mysql e colar a pasta copiada (data).
 
-Após essas configurações, deve-se inicializar o servidos apache e o mysql diretamente no painel de controle do xampp, feito isso basta recarregar a página http://localhost:4200/ ou a porta que vocie selecionou para rodar o Angular através do ```ng serve```.
+Após isso o Angular CLI irá subir um servidor local na sua máquina, geralmente a porta de acesso é a 4200, más se está estiver em uso vai aparecer uma mansagem no terminal semelhante a essa
+```javascript
+Port 4200 is already in use.Would you like to use a different port? (Y/n) 
+```
+Nesse caso, deve-se dar enter para o servidor escolher uma porta aleatória disponível. Feito isso, quando terminar de compilar, verá que no terminal ele lhe dara a rota que o servidor
+está rodando, aí é só navegar até lá e pronto, aplicação front end deve estar funcionando na rota http://localhost/<porta-selecionada>
 
-Para ver os dados sendo inseridos na tabela, basta navegar até http://localhost/phpmyadmin/ ou abrir o painel de controle do xampp (XAMPP Control Painel) e clicar no botão Admin do MySQL em em seguida abris a tabela que deseja consultar dentro do database salaosimp. -->
+ #### Passos para subir o back end
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Ainda não definido

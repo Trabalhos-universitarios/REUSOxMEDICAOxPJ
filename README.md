@@ -78,50 +78,44 @@ as etaps serão concluídas, os critérios a serem avaliados nesse projeto serã
 ## Como executar o projeto
 
 ### Front End
+Para que o código funcione corretamente deve-se ser instalados as seguintes ferramentas:
 - Node em <a>https://nodejs.org/en/download/</a>
 
 Após a instalação e configuração do Node, deve-se instalar as seguintes ferramentas através do terminal:
 
-- Type Script ```npm i -g typescript```
-- Angular CLI ```npm i @angular/cli```
-- Angular Material ```ng add @angular/material```
-
-Após a instalação das ferramentas acima, deve-se executar a instalação dos pacotes através do seguinte comando:
-
-- Node_Modules ```npm install```
-
-Após a instalação dos pacotes, deve-se iniciar o projeto utilizando o seguinte comando:
-
-- Iniciar servidor Angular ```ng serve```
-
-**OBS:**
-Caso ocorra algum erro de execução, verifique em **node_modules** se estão instalados todos os pacotes 
-existentes em :
-```javascript 
-package.json
-```
-Caso note que falta algun, deverá instalar manualmente através do terminal usando o comando ```npm install <nome do pacote + versão do pacote>```.
-
-### Back End
+- Pacotes para trabalhar com node.ts 
 ````
-Para que o código funcione corretamente deve-se ser instalados as seguintes ferramentas:
+npm install typescript ts-node @types/node --save-dev
 ````
-- ````npm init````
-- Node em ````<a>https://nodejs.org/en/download/</a>```` (caso não tenha instalado ainda)
-- Express em ````npm install express –save````
-- Pacotes para trabalhar com node.ts ````npm install typescript ts-node @types/node --save-dev````
   - Isso instala três pacotes como dependências de desenvolvimento em seu projeto: 
     - typescript: a cadeia de ferramentas do TypeScript.
     - ts-node: um pacote para executar aplicativos do TypeScript sem compilação prévia para JavaScript.
     - @types/node: as definições de tipo do TypeScript para o Node.js.
-  A última coisa a ser feita é adicionar um arquivo tsconfig.json para garantir que o TypeScript esteja configurado corretamente para o aplicativo que você irá compilar.
-- npm install @prisma/cli --save-dev
+- Angular CLI 
+```
+npm i @angular/cli
+```
+- Angular Material 
+```
+ng add @angular/material
+```
+
+### Back End
+Para que o código funcione corretamente deve-se ser instalados as seguintes ferramentas:
+
+- Node em <a>https://nodejs.org/en/download/</a> (caso não tenha instalado ainda)
+- Express em 
+````
+npm install express –save
+````
+A última coisa a ser feita é adicionar um arquivo tsconfig.json para garantir que o TypeScript esteja configurado corretamente para o aplicativo que você irá compilar.
+````
+npm install @prisma/cli --save-dev
+````
 Como prática recomendada, aconselha-se instalar o Prisma CLI localmente em seu projeto (ao invés de uma instalação global). Isso ajuda a evitar conflitos de versão caso você tenha mais de um projeto Prisma em sua máquina.
-- Docker em ````<a>https://docs.docker.com/desktop/install/windows-install/</a>````
+- Docker em <a>https://docs.docker.com/desktop/install/windows-install/</a>
 
-
-
- Após a instalação e configuração das dependências deve-se seguir os seguintes passos:
+Após a instalação e configuração das dependências deve-se seguir os seguintes passos:
 
  #### Passos para subir o front end
  - Abrir o navegador 
@@ -133,6 +127,15 @@ Port 4200 is already in use.Would you like to use a different port? (Y/n)
 ```
 Nesse caso, deve-se dar enter para o servidor escolher uma porta aleatória disponível. Feito isso, quando terminar de compilar, verá que no terminal ele lhe dara a rota que o servidor
 está rodando, aí é só navegar até lá e pronto, aplicação front end deve estar funcionando na rota http://localhost/<porta-selecionada>
+
+**OBS:**
+Caso ocorra algum erro de execução, verifique em **node_modules** se estão instalados todos os pacotes 
+existentes em :
+```javascript 
+package.json
+```
+Caso note que falta algun, deverá instalar manualmente através do terminal usando o comando ```npm install <nome do pacote + versão do pacote>```.
+
 
  #### Passos para subir o back end
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Ainda não definido

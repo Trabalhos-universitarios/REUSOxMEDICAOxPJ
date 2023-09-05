@@ -65,11 +65,11 @@ as etaps serão concluídas, os critérios a serem avaliados nesse projeto serã
 ### Projeto geral
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar story board.<br>
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar personas e estória de usuário.<br>
-<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar protótipo.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar protótipo.<br>
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Demais assuntos que ainda não foram abordados.<br>
 
 ### Front end
-<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar projeto angular.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar projeto angular.<br>
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar arquitetura de pastas.<br>
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Instalar e configurar as dependências do projeto.<br>
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Demais etapas ainda não definidas.<br>

@@ -81,6 +81,10 @@ as etaps serão concluídas, os critérios a serem avaliados nesse projeto serã
 Para que o código funcione corretamente deve-se ser instalados as seguintes ferramentas:
 - Node em <a>https://nodejs.org/en/download/</a>
 
+Certifique-se de que o ```npm``` foi instalado junto, geralmente ele é instalado jundo com o node, para isso de o seguinte comando no terminal
+````
+npm --v
+````
 Após a instalação e configuração do Node, deve-se instalar as seguintes ferramentas através do terminal:
 
 - Pacotes para trabalhar com node.ts 

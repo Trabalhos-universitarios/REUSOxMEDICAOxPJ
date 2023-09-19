@@ -105,6 +105,11 @@ ng add @angular/material
 ```
 
 ### Back End
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar projeto Node.ts.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar arquitetura de pastas.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Instalar e configurar as dependências do projeto.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Demais etapas ainda não definidas.<br>
+
 Para que o código funcione corretamente deve-se ser instalados as seguintes ferramentas:
 
 - Node em <a>https://nodejs.org/en/download/</a> (caso não tenha instalado ainda)

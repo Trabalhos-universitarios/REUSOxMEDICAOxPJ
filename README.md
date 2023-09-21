@@ -107,8 +107,21 @@ ng add @angular/material
 ### Back End
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar projeto Node.ts.<br>
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar arquitetura de pastas.<br>
-<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Instalar e configurar as dependências do projeto.<br>
-<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Demais etapas ainda não definidas.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Instalar e configurar as dependências do projeto.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar e configurar o index para subir o servidor.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar e configurar arquivo .env para armazenar as variáveis de ambiente.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar e configurar arquivo config para acessar as variáveis de embiente.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar arquivo .app e importar as dependências necessárias.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar rotas para acesso do front end.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/ok.png"> - Criar o controller para que as funções sejam acessadas.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar função para acessar o banco de dados POST.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar função para acessar o banco de dados DELETE.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar função para acessar o banco de dados PUT ou PATCH.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar função para acessar o banco de dados GET.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - configurar o prisma no projeto.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar uma ORM com prisma e postgresSql.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Conectar com front end.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Testar.<br>
 
 Para que o código funcione corretamente deve-se ser instalados as seguintes ferramentas:
 

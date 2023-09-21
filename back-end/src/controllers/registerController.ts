@@ -6,6 +6,9 @@ class RegisterController {
 
         const { user_name, user_adress, user_phone, user_document } = req.body;
 
+        console.log('ENTROU NA ROTA API. . .');
+        
+
         try {
             
         } catch (error) {

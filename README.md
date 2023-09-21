@@ -3,7 +3,7 @@
 </h1>
 
 ```javascript
-@Autores Johnny Carvaho - Lucas Lemes - Alessandro Schimidt - Victor Nemo
+@Autores Johnny Carvaho - Lucas Lemes - Alessandro Schimidt
 @Date 2023
 ```
 

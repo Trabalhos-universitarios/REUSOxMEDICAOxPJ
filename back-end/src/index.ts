@@ -1,13 +1,13 @@
-import express from 'express'
+import express from 'express';
+import { PORT } from './config';
 
 const app = express();
-const port = 3000;
 
 // Rota de exemplo
 app.get('/', (req, res) => {
   res.send('Olá, mundo!');
 });
 
-app.listen(port, () => {
-  console.log(`Servidor está rodando em http://localhost:${port}`);
+export const server = app.listen(PORT, () => {
+  console.log(`Servidor está rodando em http://localhost:${PORT}`);
 });

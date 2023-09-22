@@ -119,7 +119,7 @@ ng add @angular/material
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar função para acessar o banco de dados PUT ou PATCH.<br>
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar função para acessar o banco de dados GET.<br>
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - configurar o prisma no projeto.<br>
-<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar uma ORM com prisma e postgresSql.<br>
+<img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Criar uma ORM com prisma e postgreSql.<br>
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Conectar com front end.<br>
 <img align="center" height="20" width="20" src="./front-end/assets/img/icons/loading.gif"> - Testar.<br>
 

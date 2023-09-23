@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "local": "npm run && ts-node -r dotenv/config ./src/index.ts dotenv_config_path=local.env",
+    "typeorm": "ts-node node_modules/.bin/typeorm --config ormconfig.js"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,10 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.17"
   }
 }

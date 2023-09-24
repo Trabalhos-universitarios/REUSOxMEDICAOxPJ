@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "user" ALTER COLUMN "specialty" SET DATA TYPE VARCHAR(50);

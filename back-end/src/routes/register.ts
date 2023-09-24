@@ -1,9 +1,10 @@
 import { Router } from "express";
 import RegisterController from "../controllers/registerController";
 
-const router: Router = Router();
+const routerRegister: Router = Router();
 
 // REGISTER A NEW USER OF SYSTEM
-router.post('/registerUser', RegisterController.createNewUser);
 
-export default router;
+routerRegister.post('/', RegisterController.createNewUser);
+
+export default routerRegister;

@@ -1,7 +1,7 @@
 create table usuario(
 	id VARCHAR(50) PRIMARY KEY UNIQUE,
     Name VARCHAR(50),
-    Specialty INTEGER,
+    Specialty VARCHAR(50),
     email VARCHAR(50)
 );
 

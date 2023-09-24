@@ -1,5 +1,5 @@
 import { Response, Request, NextFunction } from "express";
-import { hashPassword } from "../config/auth/bcrypt.utils"; 
+import { hashPassword } from "../config/auth/bcrypt.utils";
 import prismaClient from "../database/prismaClient";
 
 class RegisterController {
@@ -19,7 +19,8 @@ class RegisterController {
                     password: hashedPassword
                 }
             })
-            res.send(newUser);
+            const objetoReq = { status: true, name: newUser.name, email: newUser.email, especialty: newUser.specialty, message: 'Cadastro realizado com sucesso!' };
+            res.send(objetoReq);
 
         } catch (error) {
             next(error);

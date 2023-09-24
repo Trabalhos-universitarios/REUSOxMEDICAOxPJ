@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id Int       @id @default(autoincrement())
+  name String
+  specialty String
+  email String
+
+  @@map("user")
+
+  UserModulesPurchases UserModulesPurchase[]
+}
+
+model Specialty {
+  specialty_id Int @id
+  specialty_name String
+
+  @@unique([specialty_id, specialty_name])
+  @@map("specialty")
+}
+
+model GraphicalResource {
+  resource_key Int @id
+  resource String
+  resource_module Int
+
+  Module Module @relation(fields: [resource_module], references: [module_ID])
+
+  @@map("graphical_resources")
+}
+
+model Module {
+  module_ID Int @id
+  module_name String @unique
+
+  Resources GraphicalResource[]
+  UserModulesPurchases UserModulesPurchase[]
+
+  @@map("modules")
+}
+
+model UserModulesPurchase {
+  purchase_id Int @id
+  user_id Int
+  module_id Int
+
+  User User @relation(fields: [user_id], references: [id])
+  Module Module @relation(fields: [module_id], references: [module_ID])
+
+  @@map("user_modules_purchases")
+}

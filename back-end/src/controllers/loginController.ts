@@ -18,8 +18,8 @@ class LoginController {
 
             if (getUser && await comparePassword(dataUser.password, getUser.password)) {
                 console.log('Usuário encontrado:', getUser);
-                const objetoReq = {name: getUser.name, email: getUser.email, especialty: getUser.specialty};
-                res.send({ ...objetoReq, status: true });
+                const objetoReq = {status: true, name: getUser.name, email: getUser.email, especialty: getUser.specialty};
+                res.send(objetoReq);
               } else {
                 console.log('Usuário não encontrado');
                 res.status(404).send({ resposta: 'Usuário não encontrado', status: false });

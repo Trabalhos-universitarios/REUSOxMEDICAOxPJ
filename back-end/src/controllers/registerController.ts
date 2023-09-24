@@ -3,14 +3,10 @@ import prismaClient from "../database/prismaClient";
 
 class RegisterController {
 
-    createNewUser = async (req: Request, res: Response, next: NextFunction) => {
-
-        const { name, specialty, email } = req.body;
-
-        console.log('ENTROU NA ROTA API. . .');
-        
+    async createNewUser(req: Request, res: Response, next: NextFunction) {
 
         try {
+            const { name, specialty, email } = req.body;
 
             const newUser = await prismaClient.user.create({
                 data: {
@@ -19,11 +15,12 @@ class RegisterController {
                     specialty
                 }
             })
-            
+            res.send(newUser);
+
         } catch (error) {
             next(error);
         }
-        
+
     }
 
 }

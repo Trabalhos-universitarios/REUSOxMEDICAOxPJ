@@ -4,18 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <link rel="stylesheet" href="user-page.component.scss">
 </head>
+<style>
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .modules-vision{
+    background-color: #786CFF;
+    border-radius: 100px;
+    height: 410px;
+    width: 100%;
+    padding-top: 15px;
+    align-items: center;
+}
+
+    .modules-container{
+        margin: 0 auto;
+        width: 1100px;
+        align-items: center;
+        display: flex;
+        height: 370px;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .module-item{
+        background-color: white;
+        border-radius: 100%;
+        height: 250px;
+        width: 250px;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+    flex-direction: column; /* Coloca os elementos um em cima do outro */
+    justify-content: center;
+    }
+
+    .module-item a{
+        text-decoration: none;
+        color: black;
+        align-items: center;
+        display: flex;
+    flex-direction: column; /* Coloca os elementos um em cima do outro */
+    justify-content: center;
+    }
+
+    .module-name{
+        margin: 0 auto;
+        font-size: large;
+    }
+
+    .module-image img{
+        height: 150px;
+    }
+
+    .mymodules-title{
+        margin-left: 50px;
+    }
+
+    .user-informations{
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .user-photo img{
+        width: 240px;
+    }
+
+    .user-name{
+        margin-left: 35px;
+    }
+
+    .user-name p{
+        font-size: xx-large;
+    }
+
+    .medical-information{
+        display: flex;
+
+    }
+
+    .medical-information p{
+        font-size: xx-large;
+    }
+
+    .specialty-name{ 
+        color: #786CFF;
+    }
+
+    .CRM{
+        margin-left: 210px;
+    }
+
+    .external-links a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .external-links a img{
+        width: 35px;
+        margin-left: 5px;
+    }
+
+</style>
 <body>
-    
-        <img class="Img36411" style="width: 237px; height: 254px; left: 60px; top: 138px; position: absolute; border-radius: 1000px" src="https://via.placeholder.com/237x254" />
-        <div class="DrAlessandroMacielSchmidt" style="left: 349px; top: 192px; position: absolute; color: black; font-size: 60px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dr. Alessandro Maciel Schmidt</div>
-        <img class="Image4" style="width: 79px; height: 76px; left: 20px; top: 24px; position: absolute" src="https://via.placeholder.com/79x76" />
-        <div class="Oftalmologista" style="left: 349px; top: 282px; position: absolute; color: #786CFF; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">Oftalmologista</div>
-        <div class="Crm178227pr" style="left: 780px; top: 288px; position: absolute; color: black; font-size: 35px; font-family: Inter; font-weight: 400; word-wrap: break-word">CRM 178227PR</div>
-        <div class="MeusMDulos" style="left: 101px; top: 429px; position: absolute; color: black; font-size: 35px; font-family: Inter; font-weight: 400; word-wrap: break-word">Meus Módulos</div>
-        <div class="Rectangle6" style="width: 1500px; height: 300px; left: -10px; top: 488px; position: absolute; background: #786CFF">
-            
+    <div class="external-links">
+        <a href="../../pages/unfinished-pages/unfinished-pages.component.html">
+            <img src="../../../assets/images/store-icon.png" alt="store-icon">
+        </a>
+        <a href="../../app.component.html">
+            <img src="../../../assets/images/logout-icon.png" alt="logout-icon">
+        </a>
+    </div>
+    <div class="user-informations">
+        <div class="user-photo">
+            <img src="../../../assets/images/user-icon.png" alt="user-logo">
         </div>
-      
+        <div class="user-name">
+            <p>Dr. Draxler Maximov</p>
+            <div class="medical-information">
+                <p class="specialty-name">Oftalmologista</p>
+                <p class="CRM">CRM: 0123918-5</p>
+            </div>
+        </div>
+    </div>
+    <div class="mymodules-title">
+        <h1>Meus módulos</h1>
+    </div>
+    <div class="modules-vision">
+        <div class="modules-container">
+            <div class="module-item">
+                <a href="#">
+                <div class="module-image">
+                    <img src="../../../assets/images/eye-icon.png" alt="eye-icon">
+                </div>
+                <div class="module-name">
+                    <p>
+                        Oftalmologia
+                    </p>
+                </div>
+            </a>
+            </div>
+            <div class="module-item">
+                <a href="#">
+                    <div class="module-image">
+                        <img src="../../../assets/images/heart-icon.png" alt="eye-icon">
+                    </div>
+                    <div class="module-name">
+                        <p>
+                            Cardiologia
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="module-item">
+                <a href="../../app.component.html">
+                    <div class="module-image">
+                        <img src="../../../assets/images/orto-icon.png" alt="eye-icon">
+                    </div>
+                    <div class="module-name">
+                        <p>
+                            Ortopedia
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

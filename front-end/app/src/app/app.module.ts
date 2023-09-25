@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserPageComponent } from './pages/user-page/user-page.component';
+import { UnfinishedPagesComponent } from './pages/unfinished-pages/unfinished-pages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserPageComponent
+    UserPageComponent,
+    UnfinishedPagesComponent
   ],
   imports: [
     BrowserModule,

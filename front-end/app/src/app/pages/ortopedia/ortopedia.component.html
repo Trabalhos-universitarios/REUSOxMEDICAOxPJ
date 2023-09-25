@@ -1,1 +1,117 @@
-<p>ortopedia works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortopedia</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-home a img{
+            width: 35px;
+            margin-left: 5px;
+        }
+        .generic-button{
+        height: 100px;
+        width: 450px;
+        background-color: #FCB500;
+        border-radius: 100px;
+        align-items: center;
+        display: flex;
+        margin: 15px;
+    }
+    
+
+    .button-decorator{
+        height: 80px;
+        width: 80px;
+        background-color: #0500FF;
+        border-radius: 100px;
+        margin-left: 10px;
+    }
+    
+    .generic-title{
+        color: white;
+        font-size: x-large;
+        margin-left: 15px;
+    }
+    
+    .content{
+        margin-left: 250px;
+    }
+
+    .first-line{
+        display: flex;
+    }
+
+    .second-line{
+        display: flex;
+
+    }
+
+    .third-line img{
+        width: 400px;
+        margin-left: 240px;
+    }
+
+</style>
+<body>
+    <div class="btn-home">
+        <a href="../user-page/user-page.component.html">
+            <img src="../../../../../src/assets/images/home-icon.png" alt="home-icon">
+        </a>
+    </div>
+
+    <div class="content">
+        <div class="first-line">
+            <a href="#" style="text-decoration: none;">
+                <div class="generic-button">
+                    <div class="button-decorator">
+                    </div>
+                    <p class="generic-title">
+                        Artrite
+                    </p>
+                </div>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <div class="generic-button">
+                    <div class="button-decorator">
+                    </div>
+                    <p class="generic-title">
+                        Menisco
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="second-line">
+            <a href="#" style="text-decoration: none;">
+                <div class="generic-button">
+                    <div class="button-decorator">
+                    </div>
+                    <p class="generic-title">
+                        Condromalácia
+                    </p>
+                </div>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <div class="generic-button">
+                    <div class="button-decorator">
+                    </div>
+                    <p class="generic-title">
+                        Ligamentos
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="third-line">
+            <img src="../../../../../src/assets/images/knee-image.png" alt="knee-image">
+        </div>
+    </div>
+</body>
+</html>

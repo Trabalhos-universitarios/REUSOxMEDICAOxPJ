@@ -1,11 +1,11 @@
-<form class="form-login" [formGroup]="formularioLogin" novalidate>
-  <mat-form-field class="email">
+<form class="forms" [formGroup]="formularioLogin" novalidate>
+  <mat-form-field class="inputs">
     <mat-label>Enter your email</mat-label>
     <input matInput placeholder="pat@example.com" formControlName="email" required>
     <mat-error >Campo obrigatório</mat-error>
   </mat-form-field>
 
-  <mat-form-field class="passowd">
+  <mat-form-field class="inputs">
     <mat-label>Enter your password</mat-label>
     <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
@@ -15,10 +15,10 @@
     <mat-error >Campo obrigatório</mat-error>
   </mat-form-field>
 
-  <button [disabled]="habilitaBotaoLogin()" class="btn-login" mat-raised-button cdkFocusInitial
+  <button [disabled]="habilitaBotaoLogin()" class="btns" mat-raised-button cdkFocusInitial
     (click)="logar()">Login
   </button>
 
-  <a class="register-link" [routerLink]="'/register'">Register</a>
+  <a class="link" [routerLink]="'/register'">Register</a>
 </form>
 

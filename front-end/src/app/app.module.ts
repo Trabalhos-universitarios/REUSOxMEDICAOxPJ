@@ -19,6 +19,7 @@ import { OrtopediaComponent } from './components/home-page/ortopedia/ortopedia.c
 import { UserPageComponent } from './components/home-page/user-page/user-page.component';
 import { UnfinishedPagesComponent } from './components/home-page/unfinished-pages/unfinished-pages.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalLoadingComponent } from './components/modal-loading/modal-loading.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     OftalmologiaComponent,
     OrtopediaComponent,
     UserPageComponent,
-    UnfinishedPagesComponent
+    UnfinishedPagesComponent,
+    ModalLoadingComponent
   ],
   imports: [
     BrowserModule,

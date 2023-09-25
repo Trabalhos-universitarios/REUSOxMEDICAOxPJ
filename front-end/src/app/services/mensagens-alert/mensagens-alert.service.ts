@@ -56,7 +56,8 @@ export class MensagensAlertService {
       icon: 'success',
       iconColor: colors.$aprovado,
       title: titulo,
-      confirmButtonColor: colors.$aprovado,
+      showConfirmButton: false,
+      timer: 1500
     })
   }
 

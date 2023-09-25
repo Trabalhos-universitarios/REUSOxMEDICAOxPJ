@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { LoadingService } from 'src/app/services/loading/loading.service';
 import { LoginService } from 'src/app/services/login-service/login.service';
 import { MensagensAlertService } from 'src/app/services/mensagens-alert/mensagens-alert.service';
 
@@ -23,7 +25,9 @@ export class LoginPageComponent {
   constructor(
     private loginService: LoginService,
     private formulario: FormBuilder,
-    private alert: MensagensAlertService) {
+    private alert: MensagensAlertService,
+    private loading: LoadingService,
+    private router: Router) {
     console.log(this.habilitaBotaoLogin());
 
   }
@@ -33,32 +37,20 @@ export class LoginPageComponent {
   }
 
   async logar() {
+    this.loading.isLoading = true;
     const resp = await this.enviarDados();
 
     if (resp) {
       this.alert.mensagemDeSucessoAlert('Login efetuado com sucesso!');
+      this.loading.isLoading = false;
+      this.router.navigate(['/user-page'])
     } else {
       this.alert.mensagemDeErroAlert('ERRO', 'Usuário ou senha incorretos!')
+      this.loading.isLoading = false;
     }
   }
 
   async enviarDados() {
     return await this.loginService.getUser(this.formularioLogin.value).toPromise();
   }
-
-  getErrorMessage() {
-    const emailControl = this.formularioLogin.get('email')?.valid;
-
-    if (emailControl) {
-      if (this.formularioLogin.value.email) {
-        return 'You must enter a value';
-      }
-
-      return this.formularioLogin.controls.email.hasError('email') ? 'Not a valid email' : '';
-    }
-
-    return '';
-  }
-
-
 }

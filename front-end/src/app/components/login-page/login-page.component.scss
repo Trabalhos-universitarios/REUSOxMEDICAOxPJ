@@ -1,0 +1,48 @@
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .email {
+    width: 300px;
+  }
+  .passowd {
+    margin-top: 20px;
+    width: 300px;
+  }
+}
+
+.btn-login {
+  cursor: pointer;
+  font-size: 20px;
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.btn-login:hover {
+  background-color: #82DEE4;
+  color: white;
+}
+
+.btn-login:disabled {
+  cursor: not-allowed !important;
+  background-color: #E0E0E0;
+  color: #95999e;
+}
+
+.register-link {
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.register-link:hover {
+  color: #82DEE4
+}
+
+

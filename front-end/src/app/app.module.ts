@@ -18,6 +18,7 @@ import { OftalmologiaComponent } from './components/home-page/oftalmologia/oftal
 import { OrtopediaComponent } from './components/home-page/ortopedia/ortopedia.component';
 import { UserPageComponent } from './components/home-page/user-page/user-page.component';
 import { UnfinishedPagesComponent } from './components/home-page/unfinished-pages/unfinished-pages.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { UnfinishedPagesComponent } from './components/home-page/unfinished-page
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

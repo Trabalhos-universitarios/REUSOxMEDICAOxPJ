@@ -4,6 +4,6 @@ import loginController from "../controllers/loginController";
 const routerLogin: Router = Router();
 
 // LOGIN USER OF SYSTEM
-routerLogin.get('/', loginController.getUser);
+routerLogin.post('/', loginController.getUser);
 
 export default routerLogin;

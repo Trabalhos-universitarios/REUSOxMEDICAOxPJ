@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { LoginService } from 'src/app/services/login-service/login.service';
+import { MensagensAlertService } from 'src/app/services/mensagens-alert/mensagens-alert.service';
 
 @Component({
   selector: 'app-login-page',
@@ -21,7 +22,8 @@ export class LoginPageComponent {
 
   constructor(
     private loginService: LoginService,
-    private formulario: FormBuilder) {
+    private formulario: FormBuilder,
+    private alert: MensagensAlertService) {
     console.log(this.habilitaBotaoLogin());
 
   }
@@ -30,11 +32,18 @@ export class LoginPageComponent {
     return (this.formularioLogin.invalid);
   }
 
-  async enviarDados() {
-    return await this.loginService.getUser(this.formularioLogin.value).toPromise().then((resp) => {
-      console.log('resposta: ', resp);
+  async logar() {
+    const resp = await this.enviarDados();
 
-    })
+    if (resp) {
+      this.alert.mensagemDeSucessoAlert('Login efetuado com sucesso!');
+    } else {
+      this.alert.mensagemDeErroAlert('ERRO', 'Usuário ou senha incorretos!')
+    }
+  }
+
+  async enviarDados() {
+    return await this.loginService.getUser(this.formularioLogin.value).toPromise();
   }
 
   getErrorMessage() {

@@ -22,7 +22,7 @@ class LoginController {
                 res.send(objetoReq);
               } else {
                 console.log('Usuário não encontrado');
-                res.send({ resposta: 'Usuário não encontrado', status: false });
+                res.send();
               }
               
 

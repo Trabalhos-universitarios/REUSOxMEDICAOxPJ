@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiologia</title>
+    <style>
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .btn-home a img{
+            width: 35px;
+            margin-left: 5px;
+        }
+
+    .generic-button{
+        height: 100px;
+        width: 450px;
+        background-color: #ED1D31;
+        border-radius: 100px;
+        align-items: center;
+        display: flex;
+        margin: 15px;
+    }
+    
+
+    .button-decorator{
+        height: 80px;
+        width: 80px;
+        background-color: blue;
+        border-radius: 100px;
+        margin-left: 10px;
+    }
+    
+    .generic-title{
+        color: white;
+        font-size: x-large;
+        margin-left: 15px;
+    }
+
+    .content{
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="btn-home">
+        <a href="../user-page/user-page.component.html">
+            <img src="../../../../../src/assets/images//home-icon.png" alt="home-icon">
+        </a>
+    </div>
+
+    <div class="content">
+        <div class="first-row">
+            <div class="btn-option">
+                <a href="#" style="text-decoration: none;">
+                    <div class="generic-button">
+                        <div class="button-decorator">
+                        </div>
+                        <p class="generic-title">
+                            Aterosclerose
+                        </p>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="btn-option">
+                <a href="#" style="text-decoration: none;">
+                    <div class="generic-button">
+                        <div class="button-decorator">
+                        </div>
+                        <p class="generic-title">
+                            Hipertensão
+                        </p>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="btn-option">
+                <a href="#" style="text-decoration: none;">
+                    <div class="generic-button">
+                        <div class="button-decorator">
+                        </div>
+                        <p class="generic-title">
+                            Infarto
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="second-row">
+            <a href="#"><img src="../../../../../src/assets/images//heart-image.png" alt="heart-image">
+            </a>
+            
+        </div>
+
+        <div class="third-row">
+            <div class="btn-option">
+                <a href="#" style="text-decoration: none;">
+                    <div class="generic-button">
+                        <div class="button-decorator">
+                        </div>
+                        <p class="generic-title">
+                            Arritmia
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="btn-option">
+                <a href="#" style="text-decoration: none;">
+                    <div class="generic-button">
+                        <div class="button-decorator">
+                        </div>
+                        <p class="generic-title">
+                            Cateterismo
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="btn-option">
+                <a href="#" style="text-decoration: none;">
+                    <div class="generic-button">
+                        <div class="button-decorator">
+                        </div>
+                        <p class="generic-title">
+                            Valvulopatia
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <app-cardio-button></app-cardio-button>
+</body>
+</html>

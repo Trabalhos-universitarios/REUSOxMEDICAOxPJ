@@ -1,0 +1,44 @@
+@import "../../colors/colors.scss";
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .inputs {
+    margin-top: 20px;
+    width: 300px;
+  }
+}
+
+.btns {
+  cursor: pointer;
+  font-size: 20px;
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: $principal;
+  color: $branco;
+}
+
+.btns:disabled {
+  cursor: not-allowed !important;
+  background-color: #E0E0E0;
+  color: #95999e;
+}
+
+.link {
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.link:hover {
+  color: #82DEE4
+}
+
+

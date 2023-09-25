@@ -1,16 +1,2 @@
-<div class="MacbookAir11" style="position: relative; background: white">
-  <div class="Rectangle14" style="left: 0px; top: 0px; position: absolute; background: white"></div>
-  <img class="CapturaDeTela20230912AS21101" style="width: 523px; left: 129px; top: 217px; position: absolute" src="../assets/images/doc-logo.png" />
-  <div>
-      <input type="email" placeholder="Digite seu e-mail..." style="width: 371px; height: 58px; left: 711px; top: 259px; position: absolute; background: #D9D9D9; border-radius: 100px; padding-left: 10px; border-color: white;">
-  </div>
-  <div class="Rectangle16" style=" position: absolute; background: #D9D9D9; border-radius: 100px">
-      <input type="password" placeholder="Digite sua senha..." style="width: 371px; height: 58px; left: 711px; top: 387px; position: absolute; background: #D9D9D9; border-radius: 100px; padding-left: 10px; border-color: white;">
-  </div>
-  <div class="Rectangle17" style="width: 371px; height: 58px; left: 711px; top: 587px; position: absolute; background: #82DEE4; border-radius: 100px;"></div>
-  <div class="Rectangle18" style="width: 371px; height: 58px; left: 711px; top: 504px; position: absolute; background: #82DEE4; border-radius: 100px"></div>
-  <div class="SignOn" style="left: 851px; top: 600px; position: absolute; color: #1E2D3A; font-size: 26px; font-weight: 400; word-wrap: break-word">Sign on</div>
-  <div class="LogIn" style="left: 851px; top: 517px; position: absolute; color: #1E2D3A; font-size: 26px; font-weight: 400; word-wrap: break-word">Log in</div>
-  <div class="EMail" style="left: 735px; top: 220px; position: absolute; color: black; font-size: 26px; font-weight: 400; word-wrap: break-word">E-mail:</div>
-  <div class="Senha" style="left: 735px; top: 351px; position: absolute; color: black; font-size: 26px; font-weight: 400; word-wrap: break-word">Senha:</div>
-</div>
+<app-modal-loading @fadeState *ngIf="loadingService.isLoading"></app-modal-loading>
+<router-outlet></router-outlet>

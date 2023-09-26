@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { ComponentsComponent } from './components/components.component';
-import { HomePageComponent } from './components/home-page/home-page.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { RegisterPageComponent } from './components/register-page/register-page.component';
 import { CardiologiaComponent } from './components/home-page/cardiologia/cardiologia.component';
@@ -20,6 +19,7 @@ import { UserPageComponent } from './components/home-page/user-page/user-page.co
 import { UnfinishedPagesComponent } from './components/home-page/unfinished-pages/unfinished-pages.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ModalLoadingComponent } from './components/modal-loading/modal-loading.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 
 @NgModule({

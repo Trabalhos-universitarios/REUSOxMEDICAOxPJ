@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UserPageComponent } from 'src/app/components/home-page/user-page.component';
+import { UserPageComponent } from 'src/app/components/home-page/user-page/user-page.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { RegisterPageComponent } from './components/register-page/register-page.component';
 import { CardiologiaComponent } from './components/home-page/cardiologia/cardiologia.component';

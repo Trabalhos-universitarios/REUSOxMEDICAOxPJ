@@ -7,20 +7,22 @@ import { CardiologiaComponent } from './components/home-page/cardiologia/cardiol
 import { OftalmologiaComponent } from './components/home-page/oftalmologia/oftalmologia.component';
 import { OrtopediaComponent } from './components/home-page/ortopedia/ortopedia.component';
 import { UnfinishedPagesComponent } from './components/home-page/unfinished-pages/unfinished-pages.component';
+import { authorizationGuard } from './_guard/authorization.guard';
 
 const routes: Routes = [
   {
     path: '', component: LoginPageComponent,
     children: [
-      { path: 'login', component: LoginPageComponent },
+      {path: 'login', component: LoginPageComponent },
     ]
   },
-  { path: 'register', component: RegisterPageComponent },
-  { path: 'user-page', component: UserPageComponent },
-  {path: 'cardiologia', component: CardiologiaComponent},
-  {path: 'oftalmologia', component: OftalmologiaComponent},
-  {path: 'ortopedia', component: OrtopediaComponent},
-  {path: 'nao-encontrado', component: UnfinishedPagesComponent}
+  {path: 'register', component: RegisterPageComponent },
+  {path: 'user-page', component: UserPageComponent, canActivate: [authorizationGuard]},
+  {path: 'cardiologia', component: CardiologiaComponent, canActivate: [authorizationGuard]},
+  {path: 'oftalmologia', component: OftalmologiaComponent, canActivate: [authorizationGuard]},
+  {path: 'ortopedia', component: OrtopediaComponent, canActivate: [authorizationGuard]},
+  {path: 'nao-encontrado', component: UnfinishedPagesComponent, canActivate: [authorizationGuard]},
+  {path: '**', redirectTo: 'login'},
 ];
 
 @NgModule({

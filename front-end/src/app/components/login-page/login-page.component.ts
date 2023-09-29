@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthorizationService } from 'src/app/services/authorization.service';
 import { LoadingService } from 'src/app/services/loading/loading.service';
 import { LoginService } from 'src/app/services/login-service/login.service';
 import { MensagensAlertService } from 'src/app/services/mensagens-alert/mensagens-alert.service';
@@ -22,13 +23,13 @@ export class LoginPageComponent {
     }
   )
 
-
   constructor(
     private loginService: LoginService,
     private formulario: FormBuilder,
     private alert: MensagensAlertService,
     private loading: LoadingService,
-    private router: Router) {
+    private router: Router,
+    private authorizationService: AuthorizationService) {
     console.log(this.habilitaBotaoLogin());
 
   }
@@ -43,6 +44,7 @@ export class LoginPageComponent {
 
     if (resp) {
       this.alert.mensagemDeSucessoAlert('Login efetuado com sucesso!');
+      this.authorizationService.authorize()
       this.loading.isLoading = false;
       this.router.navigate(['/user-page'])
     } else {

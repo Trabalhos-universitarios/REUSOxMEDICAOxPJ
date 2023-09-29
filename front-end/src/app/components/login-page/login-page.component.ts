@@ -12,6 +12,7 @@ import { MensagensAlertService } from 'src/app/services/mensagens-alert/mensagen
 })
 export class LoginPageComponent {
 
+
   hide: boolean = true;
 
   formularioLogin = this.formulario.group(

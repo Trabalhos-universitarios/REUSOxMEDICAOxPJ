@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "local": "npm run && ts-node -r dotenv/config ./src/index.ts dotenv_config_path=local.env"
+    "local": "npm run && ts-node -r dotenv/config ./src/index.ts dotenv_config_path=local.env",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

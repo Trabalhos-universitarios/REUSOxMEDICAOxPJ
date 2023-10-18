@@ -5,7 +5,7 @@ import { Injectable, OnInit } from '@angular/core';
 })
 export class AuthorizationService {
 
-  private static authorization = false;
+  private static authorization = true;
 
   constructor() {}
 
